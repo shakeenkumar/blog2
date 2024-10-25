@@ -12,6 +12,9 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 nav ul {
@@ -23,14 +26,17 @@ nav ul {
     gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 215, 0, 0.2);
 }
 
 main {
@@ -102,4 +108,14 @@ form select {
     padding: 5px;
     border-radius: 4px;
     border: 1px solid #ccc;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    #articles {
+        grid-template-columns: 1fr;
+    }
 }
