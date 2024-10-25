@@ -1,4 +1,4 @@
-/* Basic styling */
+/* General styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,21 +14,38 @@ header {
     text-align: center;
 }
 
-main {
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    padding: 1rem;
-}
-
-#articles {
-    max-width: 800px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
     gap: 20px;
 }
 
-/* Styling for each article */
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 2rem;
+}
+
+#articles {
+    display: grid;
+    gap: 20px;
+}
+
+/* Article styling */
 article {
     background-color: white;
     border: 1px solid #ddd;
@@ -61,4 +78,28 @@ article .details {
 
 article .rating {
     color: gold;
+}
+
+/* Sidebar styling */
+aside {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
