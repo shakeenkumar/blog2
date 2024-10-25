@@ -19,10 +19,10 @@
     </header>
 
     <main>
-        <section id="articles"></section>
         <aside>
             <form id="filterForm">
-                <label for="sort">Sort:</label>
+                <h2>Filter Articles</h2>
+                <label for="sort">Sort by:</label>
                 <select id="sort" name="sort">
                     <option value="date">Date</option>
                     <option value="rating">Rating</option>
@@ -50,9 +50,14 @@
                 <button type="submit">Apply Filters</button>
             </form>
         </aside>
+
+        <section id="articles"></section> <!-- Container for articles -->
     </main>
 
-    <script src="articles.js" defer></script>
-    <script src="blog.js" defer></script>
+    <footer>
+        <p>&copy; 2024 Kids Read for Fun. All rights reserved.</p>
+    </footer>
+
+    <script src="blog.js" defer></script> <!-- Link to the main JavaScript file -->
 </body>
 </html>
